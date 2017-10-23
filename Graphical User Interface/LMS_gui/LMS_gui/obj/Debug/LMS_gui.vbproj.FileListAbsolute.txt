@@ -1,0 +1,15 @@
+C:\Users\herreraj35\Desktop\LMS_gui\LMS_gui\bin\Debug\LMS_gui.exe.config
+D:\LMS_gui\LMS_gui\bin\Debug\LMS_gui.exe.config
+D:\LMS_gui\LMS_gui\bin\Debug\LMS_gui.exe
+D:\LMS_gui\LMS_gui\bin\Debug\LMS_gui.pdb
+D:\LMS_gui\LMS_gui\bin\Debug\LMS_gui.xml
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.vbprojResolveAssemblyReference.cache
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form1.resources
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Resources.resources
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.vbproj.GenerateResource.Cache
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.vbproj.CoreCompileInputs.cache
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.exe
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.xml
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.pdb
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form2.resources
+D:\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form3.resources
