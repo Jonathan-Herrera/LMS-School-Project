@@ -55,6 +55,7 @@ Public Class Form1
 
     Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
         If txtuser.Text = "username" And txtpass.Text = "password" Then
+            ProgressBar1.Show()
             Timer1.Start()
         End If
 
@@ -66,6 +67,10 @@ Public Class Form1
             Form2.Show()
             Me.Close()
         End If
+    End Sub
+
+    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
+
     End Sub
 End Class
 

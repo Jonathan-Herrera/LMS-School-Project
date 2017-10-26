@@ -39,7 +39,7 @@ Partial Class Form1
         'btn_login
         '
         Me.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btn_login.Location = New System.Drawing.Point(197, 263)
+        Me.btn_login.Location = New System.Drawing.Point(251, 287)
         Me.btn_login.Name = "btn_login"
         Me.btn_login.Size = New System.Drawing.Size(75, 23)
         Me.btn_login.TabIndex = 0
@@ -50,20 +50,20 @@ Partial Class Form1
         '
         Me.lbluser.AutoSize = True
         Me.lbluser.BackColor = System.Drawing.Color.Transparent
-        Me.lbluser.Font = New System.Drawing.Font("Bradley Hand ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbluser.Font = New System.Drawing.Font("Bradley Hand ITC", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbluser.ForeColor = System.Drawing.Color.White
-        Me.lbluser.Location = New System.Drawing.Point(148, 157)
+        Me.lbluser.Location = New System.Drawing.Point(247, 177)
         Me.lbluser.Name = "lbluser"
-        Me.lbluser.Size = New System.Drawing.Size(85, 20)
+        Me.lbluser.Size = New System.Drawing.Size(109, 26)
         Me.lbluser.TabIndex = 1
         Me.lbluser.Text = "Username"
         '
         'lblpass
         '
         Me.lblpass.BackColor = System.Drawing.Color.Transparent
-        Me.lblpass.Font = New System.Drawing.Font("Bradley Hand ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblpass.Font = New System.Drawing.Font("Bradley Hand ITC", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblpass.ForeColor = System.Drawing.Color.White
-        Me.lblpass.Location = New System.Drawing.Point(148, 204)
+        Me.lblpass.Location = New System.Drawing.Point(247, 227)
         Me.lblpass.Name = "lblpass"
         Me.lblpass.Size = New System.Drawing.Size(133, 19)
         Me.lblpass.TabIndex = 2
@@ -71,14 +71,14 @@ Partial Class Form1
         '
         'txtpass
         '
-        Me.txtpass.Location = New System.Drawing.Point(152, 226)
+        Me.txtpass.Location = New System.Drawing.Point(251, 249)
         Me.txtpass.Name = "txtpass"
         Me.txtpass.Size = New System.Drawing.Size(181, 20)
         Me.txtpass.TabIndex = 3
         '
         'txtuser
         '
-        Me.txtuser.Location = New System.Drawing.Point(152, 181)
+        Me.txtuser.Location = New System.Drawing.Point(251, 200)
         Me.txtuser.Name = "txtuser"
         Me.txtuser.Size = New System.Drawing.Size(181, 20)
         Me.txtuser.TabIndex = 4
@@ -93,7 +93,7 @@ Partial Class Form1
         '
         'btn_admin
         '
-        Me.btn_admin.Location = New System.Drawing.Point(28, 344)
+        Me.btn_admin.Location = New System.Drawing.Point(55, 422)
         Me.btn_admin.Name = "btn_admin"
         Me.btn_admin.Size = New System.Drawing.Size(75, 23)
         Me.btn_admin.TabIndex = 6
@@ -102,7 +102,7 @@ Partial Class Form1
         '
         'btn_exit
         '
-        Me.btn_exit.Location = New System.Drawing.Point(387, 344)
+        Me.btn_exit.Location = New System.Drawing.Point(578, 422)
         Me.btn_exit.Name = "btn_exit"
         Me.btn_exit.Size = New System.Drawing.Size(75, 23)
         Me.btn_exit.TabIndex = 8
@@ -113,11 +113,11 @@ Partial Class Form1
         '
         Me.lbl_name.AutoSize = True
         Me.lbl_name.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_name.Font = New System.Drawing.Font("Bradley Hand ITC", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_name.Font = New System.Drawing.Font("Bradley Hand ITC", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_name.ForeColor = System.Drawing.Color.White
         Me.lbl_name.Location = New System.Drawing.Point(20, 60)
         Me.lbl_name.Name = "lbl_name"
-        Me.lbl_name.Size = New System.Drawing.Size(197, 44)
+        Me.lbl_name.Size = New System.Drawing.Size(267, 60)
         Me.lbl_name.TabIndex = 9
         Me.lbl_name.Text = "Chalkboard"
         '
@@ -126,10 +126,11 @@ Partial Class Form1
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(28, 316)
+        Me.ProgressBar1.Location = New System.Drawing.Point(55, 344)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(434, 10)
+        Me.ProgressBar1.Size = New System.Drawing.Size(599, 10)
         Me.ProgressBar1.TabIndex = 10
+        Me.ProgressBar1.Visible = False
         '
         'Form1
         '
@@ -139,7 +140,7 @@ Partial Class Form1
         Me.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.BackgroundImage = Global.LMS_gui.My.Resources.Resources.chalkboard
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(506, 435)
+        Me.ClientSize = New System.Drawing.Size(687, 503)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.lbl_name)
         Me.Controls.Add(Me.btn_exit)
