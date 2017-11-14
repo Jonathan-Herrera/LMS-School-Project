@@ -28,13 +28,12 @@ Partial Class Form2a
         Me.btn_search = New System.Windows.Forms.Button()
         Me.btn_back = New System.Windows.Forms.Button()
         Me.list_addcourse1 = New System.Windows.Forms.ListBox()
-        Me.list_addcourse2 = New System.Windows.Forms.ListBox()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn_subject
         '
-        Me.btn_subject.Location = New System.Drawing.Point(59, 37)
+        Me.btn_subject.Location = New System.Drawing.Point(29, 37)
         Me.btn_subject.Name = "btn_subject"
         Me.btn_subject.Size = New System.Drawing.Size(116, 23)
         Me.btn_subject.TabIndex = 0
@@ -54,7 +53,7 @@ Partial Class Form2a
         '
         Me.list_courses.FormattingEnabled = True
         Me.list_courses.Items.AddRange(New Object() {"Math", "Engineering", "Chemistry", "Science", "Reading", "Art", "Music ", "History", "Computer Science"})
-        Me.list_courses.Location = New System.Drawing.Point(59, 89)
+        Me.list_courses.Location = New System.Drawing.Point(29, 68)
         Me.list_courses.Name = "list_courses"
         Me.list_courses.Size = New System.Drawing.Size(120, 95)
         Me.list_courses.TabIndex = 3
@@ -62,7 +61,7 @@ Partial Class Form2a
         '
         'btn_search
         '
-        Me.btn_search.Location = New System.Drawing.Point(59, 218)
+        Me.btn_search.Location = New System.Drawing.Point(29, 188)
         Me.btn_search.Name = "btn_search"
         Me.btn_search.Size = New System.Drawing.Size(75, 23)
         Me.btn_search.TabIndex = 4
@@ -83,21 +82,11 @@ Partial Class Form2a
         '
         Me.list_addcourse1.FormattingEnabled = True
         Me.list_addcourse1.Items.AddRange(New Object() {"Class1", "Class2", "Class3", "Class4", "Class5", "Class6", "Class7", "Class8", "Class9", "Class10"})
-        Me.list_addcourse1.Location = New System.Drawing.Point(213, 53)
+        Me.list_addcourse1.Location = New System.Drawing.Point(187, 12)
         Me.list_addcourse1.Name = "list_addcourse1"
         Me.list_addcourse1.Size = New System.Drawing.Size(301, 199)
         Me.list_addcourse1.TabIndex = 7
         Me.list_addcourse1.Visible = False
-        '
-        'list_addcourse2
-        '
-        Me.list_addcourse2.FormattingEnabled = True
-        Me.list_addcourse2.Items.AddRange(New Object() {"Class1", "Class2", "Class3", "Class4", "Class5", "Class6", "Class7", "Class8", "Class9", "Class10"})
-        Me.list_addcourse2.Location = New System.Drawing.Point(213, 120)
-        Me.list_addcourse2.Name = "list_addcourse2"
-        Me.list_addcourse2.Size = New System.Drawing.Size(301, 199)
-        Me.list_addcourse2.TabIndex = 8
-        Me.list_addcourse2.Visible = False
         '
         'btn_add
         '
@@ -114,7 +103,6 @@ Partial Class Form2a
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(581, 370)
         Me.Controls.Add(Me.btn_add)
-        Me.Controls.Add(Me.list_addcourse2)
         Me.Controls.Add(Me.list_addcourse1)
         Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.btn_search)
@@ -133,6 +121,5 @@ Partial Class Form2a
     Friend WithEvents btn_search As Button
     Friend WithEvents btn_back As Button
     Friend WithEvents list_addcourse1 As ListBox
-    Friend WithEvents list_addcourse2 As ListBox
     Friend WithEvents btn_add As Button
 End Class

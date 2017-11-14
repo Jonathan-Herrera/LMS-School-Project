@@ -30,12 +30,19 @@ Partial Class Form2
         Me.btn_gpa = New System.Windows.Forms.Button()
         Me.btn_add_course = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbl_one = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbl_six = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'btn_exit
         '
-        Me.btn_exit.Location = New System.Drawing.Point(770, 517)
+        Me.btn_exit.Location = New System.Drawing.Point(732, 457)
         Me.btn_exit.Name = "btn_exit"
         Me.btn_exit.Size = New System.Drawing.Size(75, 23)
         Me.btn_exit.TabIndex = 0
@@ -60,7 +67,7 @@ Partial Class Form2
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(30, 48)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(158, 382)
+        Me.GroupBox1.Size = New System.Drawing.Size(158, 320)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tools"
@@ -106,19 +113,79 @@ Partial Class Form2
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lbl_six)
+        Me.GroupBox2.Controls.Add(Me.Label5)
+        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Controls.Add(Me.Label3)
+        Me.GroupBox2.Controls.Add(Me.Label2)
+        Me.GroupBox2.Controls.Add(Me.lbl_one)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(218, 48)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(594, 391)
+        Me.GroupBox2.Size = New System.Drawing.Size(589, 320)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "My Courses"
+        '
+        'lbl_one
+        '
+        Me.lbl_one.AutoSize = True
+        Me.lbl_one.Location = New System.Drawing.Point(30, 52)
+        Me.lbl_one.Name = "lbl_one"
+        Me.lbl_one.Size = New System.Drawing.Size(70, 25)
+        Me.lbl_one.TabIndex = 0
+        Me.lbl_one.Text = "Label1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(30, 93)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(70, 25)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Label2"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(30, 131)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(70, 25)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Label3"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(30, 172)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(70, 25)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Label4"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(30, 213)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(70, 25)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Label5"
+        '
+        'lbl_six
+        '
+        Me.lbl_six.AutoSize = True
+        Me.lbl_six.Location = New System.Drawing.Point(30, 257)
+        Me.lbl_six.Name = "lbl_six"
+        Me.lbl_six.Size = New System.Drawing.Size(70, 25)
+        Me.lbl_six.TabIndex = 5
+        Me.lbl_six.Text = "Label6"
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(857, 552)
+        Me.ClientSize = New System.Drawing.Size(862, 551)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_back)
@@ -126,6 +193,8 @@ Partial Class Form2
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -138,4 +207,10 @@ Partial Class Form2
     Friend WithEvents Button3 As Button
     Friend WithEvents btn_drop As Button
     Friend WithEvents btn_gpa As Button
+    Friend WithEvents lbl_six As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lbl_one As Label
 End Class
