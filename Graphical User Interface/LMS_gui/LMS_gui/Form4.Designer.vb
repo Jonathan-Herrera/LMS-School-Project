@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Course4Form
+Partial Class Form4
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Course4Form
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_back = New System.Windows.Forms.Button()
         Me.FirstNameLabel = New System.Windows.Forms.Label()
         Me.LastNameLabel = New System.Windows.Forms.Label()
         Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
@@ -40,19 +40,19 @@ Partial Class Course4Form
         Me.Entry2 = New System.Windows.Forms.TextBox()
         Me.TestEntry3 = New System.Windows.Forms.Label()
         Me.Entry3 = New System.Windows.Forms.TextBox()
-        Me.AddButton = New System.Windows.Forms.Button()
-        Me.LogOutButton = New System.Windows.Forms.Button()
+        Me.btn_add = New System.Windows.Forms.Button()
+        Me.btn_logout = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'btn_back
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(26, 331)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 41)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_back.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_back.Location = New System.Drawing.Point(26, 331)
+        Me.btn_back.Name = "btn_back"
+        Me.btn_back.Size = New System.Drawing.Size(97, 41)
+        Me.btn_back.TabIndex = 0
+        Me.btn_back.Text = "Back"
+        Me.btn_back.UseVisualStyleBackColor = True
         '
         'FirstNameLabel
         '
@@ -181,33 +181,33 @@ Partial Class Course4Form
         Me.Entry3.Size = New System.Drawing.Size(100, 20)
         Me.Entry3.TabIndex = 11
         '
-        'AddButton
+        'btn_add
         '
-        Me.AddButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddButton.Location = New System.Drawing.Point(179, 252)
-        Me.AddButton.Name = "AddButton"
-        Me.AddButton.Size = New System.Drawing.Size(100, 35)
-        Me.AddButton.TabIndex = 12
-        Me.AddButton.Text = "Add"
-        Me.AddButton.UseVisualStyleBackColor = True
+        Me.btn_add.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_add.Location = New System.Drawing.Point(179, 252)
+        Me.btn_add.Name = "btn_add"
+        Me.btn_add.Size = New System.Drawing.Size(100, 35)
+        Me.btn_add.TabIndex = 12
+        Me.btn_add.Text = "Add"
+        Me.btn_add.UseVisualStyleBackColor = True
         '
-        'LogOutButton
+        'btn_logout
         '
-        Me.LogOutButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LogOutButton.Location = New System.Drawing.Point(659, 331)
-        Me.LogOutButton.Name = "LogOutButton"
-        Me.LogOutButton.Size = New System.Drawing.Size(118, 41)
-        Me.LogOutButton.TabIndex = 13
-        Me.LogOutButton.Text = "Log Out"
-        Me.LogOutButton.UseVisualStyleBackColor = True
+        Me.btn_logout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_logout.Location = New System.Drawing.Point(659, 331)
+        Me.btn_logout.Name = "btn_logout"
+        Me.btn_logout.Size = New System.Drawing.Size(118, 41)
+        Me.btn_logout.TabIndex = 13
+        Me.btn_logout.Text = "Log Out"
+        Me.btn_logout.UseVisualStyleBackColor = True
         '
-        'Course4Form
+        'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(809, 396)
-        Me.Controls.Add(Me.LogOutButton)
-        Me.Controls.Add(Me.AddButton)
+        Me.Controls.Add(Me.btn_logout)
+        Me.Controls.Add(Me.btn_add)
         Me.Controls.Add(Me.Entry3)
         Me.Controls.Add(Me.TestEntry3)
         Me.Controls.Add(Me.Entry2)
@@ -219,15 +219,15 @@ Partial Class Course4Form
         Me.Controls.Add(Me.FirstNameTextBox)
         Me.Controls.Add(Me.LastNameLabel)
         Me.Controls.Add(Me.FirstNameLabel)
-        Me.Controls.Add(Me.Button1)
-        Me.Name = "Course4Form"
+        Me.Controls.Add(Me.btn_back)
+        Me.Name = "Form4"
         Me.Text = "Theory of Computation"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_back As Button
     Friend WithEvents FirstNameLabel As Label
     Friend WithEvents LastNameLabel As Label
     Friend WithEvents FirstNameTextBox As TextBox
@@ -245,6 +245,6 @@ Partial Class Course4Form
     Friend WithEvents Entry2 As TextBox
     Friend WithEvents TestEntry3 As Label
     Friend WithEvents Entry3 As TextBox
-    Friend WithEvents AddButton As Button
-    Friend WithEvents LogOutButton As Button
+    Friend WithEvents btn_add As Button
+    Friend WithEvents btn_logout As Button
 End Class

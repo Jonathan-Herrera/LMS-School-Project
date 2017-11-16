@@ -23,10 +23,10 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btn_logout = New System.Windows.Forms.Button()
-        Me.Course1Button = New System.Windows.Forms.Button()
-        Me.Course2Button = New System.Windows.Forms.Button()
-        Me.Course3Button = New System.Windows.Forms.Button()
-        Me.Course4Button = New System.Windows.Forms.Button()
+        Me.btn_course1 = New System.Windows.Forms.Button()
+        Me.btn_course2 = New System.Windows.Forms.Button()
+        Me.btn_course3 = New System.Windows.Forms.Button()
+        Me.btn_course4 = New System.Windows.Forms.Button()
         Me.Course1Label = New System.Windows.Forms.Label()
         Me.Course2Label = New System.Windows.Forms.Label()
         Me.Course3Label = New System.Windows.Forms.Label()
@@ -42,41 +42,41 @@ Partial Class Form3
         Me.btn_logout.Text = "Logout"
         Me.btn_logout.UseVisualStyleBackColor = True
         '
-        'Course1Button
+        'btn_course1
         '
-        Me.Course1Button.Location = New System.Drawing.Point(194, 41)
-        Me.Course1Button.Name = "Course1Button"
-        Me.Course1Button.Size = New System.Drawing.Size(137, 38)
-        Me.Course1Button.TabIndex = 1
-        Me.Course1Button.Text = "Theory of Computation"
-        Me.Course1Button.UseVisualStyleBackColor = True
+        Me.btn_course1.Location = New System.Drawing.Point(194, 41)
+        Me.btn_course1.Name = "btn_course1"
+        Me.btn_course1.Size = New System.Drawing.Size(137, 38)
+        Me.btn_course1.TabIndex = 1
+        Me.btn_course1.Text = "Theory of Computation"
+        Me.btn_course1.UseVisualStyleBackColor = True
         '
-        'Course2Button
+        'btn_course2
         '
-        Me.Course2Button.Location = New System.Drawing.Point(194, 97)
-        Me.Course2Button.Name = "Course2Button"
-        Me.Course2Button.Size = New System.Drawing.Size(137, 38)
-        Me.Course2Button.TabIndex = 2
-        Me.Course2Button.Text = "Digital Logic"
-        Me.Course2Button.UseVisualStyleBackColor = True
+        Me.btn_course2.Location = New System.Drawing.Point(194, 97)
+        Me.btn_course2.Name = "btn_course2"
+        Me.btn_course2.Size = New System.Drawing.Size(137, 38)
+        Me.btn_course2.TabIndex = 2
+        Me.btn_course2.Text = "Digital Logic"
+        Me.btn_course2.UseVisualStyleBackColor = True
         '
-        'Course3Button
+        'btn_course3
         '
-        Me.Course3Button.Location = New System.Drawing.Point(194, 154)
-        Me.Course3Button.Name = "Course3Button"
-        Me.Course3Button.Size = New System.Drawing.Size(137, 38)
-        Me.Course3Button.TabIndex = 3
-        Me.Course3Button.Text = "Software Engineering"
-        Me.Course3Button.UseVisualStyleBackColor = True
+        Me.btn_course3.Location = New System.Drawing.Point(194, 154)
+        Me.btn_course3.Name = "btn_course3"
+        Me.btn_course3.Size = New System.Drawing.Size(137, 38)
+        Me.btn_course3.TabIndex = 3
+        Me.btn_course3.Text = "Software Engineering"
+        Me.btn_course3.UseVisualStyleBackColor = True
         '
-        'Course4Button
+        'btn_course4
         '
-        Me.Course4Button.Location = New System.Drawing.Point(194, 213)
-        Me.Course4Button.Name = "Course4Button"
-        Me.Course4Button.Size = New System.Drawing.Size(137, 38)
-        Me.Course4Button.TabIndex = 4
-        Me.Course4Button.Text = "Operating Systems"
-        Me.Course4Button.UseVisualStyleBackColor = True
+        Me.btn_course4.Location = New System.Drawing.Point(194, 213)
+        Me.btn_course4.Name = "btn_course4"
+        Me.btn_course4.Size = New System.Drawing.Size(137, 38)
+        Me.btn_course4.TabIndex = 4
+        Me.btn_course4.Text = "Operating Systems"
+        Me.btn_course4.UseVisualStyleBackColor = True
         '
         'Course1Label
         '
@@ -127,10 +127,10 @@ Partial Class Form3
         Me.Controls.Add(Me.Course3Label)
         Me.Controls.Add(Me.Course2Label)
         Me.Controls.Add(Me.Course1Label)
-        Me.Controls.Add(Me.Course4Button)
-        Me.Controls.Add(Me.Course3Button)
-        Me.Controls.Add(Me.Course2Button)
-        Me.Controls.Add(Me.Course1Button)
+        Me.Controls.Add(Me.btn_course4)
+        Me.Controls.Add(Me.btn_course3)
+        Me.Controls.Add(Me.btn_course2)
+        Me.Controls.Add(Me.btn_course1)
         Me.Controls.Add(Me.btn_logout)
         Me.Name = "Form3"
         Me.Text = "Form3"
@@ -140,10 +140,10 @@ Partial Class Form3
     End Sub
 
     Friend WithEvents btn_logout As Button
-    Friend WithEvents Course1Button As Button
-    Friend WithEvents Course2Button As Button
-    Friend WithEvents Course3Button As Button
-    Friend WithEvents Course4Button As Button
+    Friend WithEvents btn_course1 As Button
+    Friend WithEvents btn_course2 As Button
+    Friend WithEvents btn_course3 As Button
+    Friend WithEvents btn_course4 As Button
     Friend WithEvents Course1Label As Label
     Friend WithEvents Course2Label As Label
     Friend WithEvents Course3Label As Label
