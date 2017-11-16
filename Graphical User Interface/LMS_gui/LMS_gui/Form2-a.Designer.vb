@@ -47,7 +47,11 @@ Partial Class Form2a
         '
         Me.list_courses.FormattingEnabled = True
         Me.list_courses.Items.AddRange(New Object() {"Math", "Engineering", "Chemistry", "Science", "Reading", "Art", "Music ", "History", "Computer Science"})
+<<<<<<< HEAD
         Me.list_courses.Location = New System.Drawing.Point(29, 75)
+=======
+        Me.list_courses.Location = New System.Drawing.Point(29, 76)
+>>>>>>> 11e4802ddd628c34a4ab431e43d5575214125e8a
         Me.list_courses.Name = "list_courses"
         Me.list_courses.Size = New System.Drawing.Size(120, 95)
         Me.list_courses.TabIndex = 3
