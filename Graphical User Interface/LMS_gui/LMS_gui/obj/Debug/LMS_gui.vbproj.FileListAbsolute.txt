@@ -28,3 +28,18 @@ C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\L
 C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.xml
 C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.pdb
 C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form2a.resources
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\bin\Debug\LMS_gui.exe.config
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\bin\Debug\LMS_gui.exe
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\bin\Debug\LMS_gui.pdb
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\bin\Debug\LMS_gui.xml
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.vbprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form1.resources
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form2.resources
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form3.resources
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form2a.resources
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.vbproj.GenerateResource.Cache
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.vbproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.exe
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.xml
+C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.pdb

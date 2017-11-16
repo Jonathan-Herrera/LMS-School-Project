@@ -30,19 +30,20 @@ Partial Class Form2
         Me.btn_gpa = New System.Windows.Forms.Button()
         Me.btn_add_course = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.lbl_one = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.lbl_six = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbl_one = New System.Windows.Forms.Label()
+        Me.classess = New System.Windows.Forms.ListBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'btn_exit
         '
-        Me.btn_exit.Location = New System.Drawing.Point(732, 457)
+        Me.btn_exit.Location = New System.Drawing.Point(620, 461)
         Me.btn_exit.Name = "btn_exit"
         Me.btn_exit.Size = New System.Drawing.Size(75, 23)
         Me.btn_exit.TabIndex = 0
@@ -51,7 +52,7 @@ Partial Class Form2
         '
         'btn_back
         '
-        Me.btn_back.Location = New System.Drawing.Point(770, 12)
+        Me.btn_back.Location = New System.Drawing.Point(620, 12)
         Me.btn_back.Name = "btn_back"
         Me.btn_back.Size = New System.Drawing.Size(75, 23)
         Me.btn_back.TabIndex = 1
@@ -113,73 +114,83 @@ Partial Class Form2
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.lbl_six)
-        Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.lbl_one)
+        Me.GroupBox2.Controls.Add(Me.classess)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(218, 48)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(589, 320)
+        Me.GroupBox2.Size = New System.Drawing.Size(354, 320)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "My Courses"
         '
-        'lbl_one
+        'lbl_six
         '
-        Me.lbl_one.AutoSize = True
-        Me.lbl_one.Location = New System.Drawing.Point(30, 52)
-        Me.lbl_one.Name = "lbl_one"
-        Me.lbl_one.Size = New System.Drawing.Size(70, 25)
-        Me.lbl_one.TabIndex = 0
-        Me.lbl_one.Text = "Label1"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(30, 93)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(70, 25)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Label2"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(30, 131)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 25)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Label3"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(30, 172)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 25)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Label4"
+        Me.lbl_six.AutoSize = True
+        Me.lbl_six.Location = New System.Drawing.Point(652, 305)
+        Me.lbl_six.Name = "lbl_six"
+        Me.lbl_six.Size = New System.Drawing.Size(39, 13)
+        Me.lbl_six.TabIndex = 5
+        Me.lbl_six.Text = "Label6"
+        Me.lbl_six.Visible = False
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(30, 213)
+        Me.Label5.Location = New System.Drawing.Point(664, 264)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(70, 25)
+        Me.Label5.Size = New System.Drawing.Size(39, 13)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Label5"
+        Me.Label5.Visible = False
         '
-        'lbl_six
+        'Label4
         '
-        Me.lbl_six.AutoSize = True
-        Me.lbl_six.Location = New System.Drawing.Point(30, 257)
-        Me.lbl_six.Name = "lbl_six"
-        Me.lbl_six.Size = New System.Drawing.Size(70, 25)
-        Me.lbl_six.TabIndex = 5
-        Me.lbl_six.Text = "Label6"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(634, 214)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Label4"
+        Me.Label4.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(605, 177)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Label3"
+        Me.Label3.Visible = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(615, 140)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Label2"
+        Me.Label2.Visible = False
+        '
+        'lbl_one
+        '
+        Me.lbl_one.AutoSize = True
+        Me.lbl_one.Location = New System.Drawing.Point(636, 111)
+        Me.lbl_one.Name = "lbl_one"
+        Me.lbl_one.Size = New System.Drawing.Size(39, 13)
+        Me.lbl_one.TabIndex = 0
+        Me.lbl_one.Text = "Label1"
+        Me.lbl_one.Visible = False
+        '
+        'classess
+        '
+        Me.classess.FormattingEnabled = True
+        Me.classess.ItemHeight = 25
+        Me.classess.Location = New System.Drawing.Point(6, 32)
+        Me.classess.Name = "classess"
+        Me.classess.Size = New System.Drawing.Size(333, 279)
+        Me.classess.TabIndex = 6
         '
         'Form2
         '
@@ -187,15 +198,21 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(862, 551)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.lbl_six)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btn_back)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btn_exit)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lbl_one)
+        Me.Controls.Add(Me.Label2)
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -213,4 +230,5 @@ Partial Class Form2
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents lbl_one As Label
+    Friend WithEvents classess As ListBox
 End Class

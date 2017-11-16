@@ -15,5 +15,7 @@
         Me.Close()
     End Sub
 
+    Private Sub lbl_one_Click(sender As Object, e As EventArgs) Handles lbl_one.Click
 
+    End Sub
 End Class

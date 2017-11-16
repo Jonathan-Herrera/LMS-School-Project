@@ -23,12 +23,15 @@ Partial Class Form2a
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btn_subject = New System.Windows.Forms.Button()
-        Me.btn_goback = New System.Windows.Forms.Button()
         Me.list_courses = New System.Windows.Forms.ListBox()
         Me.btn_search = New System.Windows.Forms.Button()
         Me.btn_back = New System.Windows.Forms.Button()
-        Me.list_addcourse1 = New System.Windows.Forms.ListBox()
-        Me.btn_add = New System.Windows.Forms.Button()
+        Me.btn_addcourse = New System.Windows.Forms.Button()
+        Me.math_classes = New System.Windows.Forms.CheckedListBox()
+        Me.engineering_classes = New System.Windows.Forms.CheckedListBox()
+        Me.chemistry_classes = New System.Windows.Forms.CheckedListBox()
+        Me.science_classes = New System.Windows.Forms.CheckedListBox()
+        Me.reading_classes = New System.Windows.Forms.CheckedListBox()
         Me.SuspendLayout()
         '
         'btn_subject
@@ -40,20 +43,11 @@ Partial Class Form2a
         Me.btn_subject.Text = "Choose Subject"
         Me.btn_subject.UseVisualStyleBackColor = True
         '
-        'btn_goback
-        '
-        Me.btn_goback.Location = New System.Drawing.Point(698, 37)
-        Me.btn_goback.Name = "btn_goback"
-        Me.btn_goback.Size = New System.Drawing.Size(75, 23)
-        Me.btn_goback.TabIndex = 2
-        Me.btn_goback.Text = "Go Back"
-        Me.btn_goback.UseVisualStyleBackColor = True
-        '
         'list_courses
         '
         Me.list_courses.FormattingEnabled = True
         Me.list_courses.Items.AddRange(New Object() {"Math", "Engineering", "Chemistry", "Science", "Reading", "Art", "Music ", "History", "Computer Science"})
-        Me.list_courses.Location = New System.Drawing.Point(29, 68)
+        Me.list_courses.Location = New System.Drawing.Point(29, 75)
         Me.list_courses.Name = "list_courses"
         Me.list_courses.Size = New System.Drawing.Size(120, 95)
         Me.list_courses.TabIndex = 3
@@ -71,43 +65,86 @@ Partial Class Form2a
         '
         'btn_back
         '
-        Me.btn_back.Location = New System.Drawing.Point(494, 12)
+        Me.btn_back.Location = New System.Drawing.Point(595, 37)
         Me.btn_back.Name = "btn_back"
         Me.btn_back.Size = New System.Drawing.Size(75, 23)
         Me.btn_back.TabIndex = 6
         Me.btn_back.Text = "Go Back"
         Me.btn_back.UseVisualStyleBackColor = True
         '
-        'list_addcourse1
+        'btn_addcourse
         '
-        Me.list_addcourse1.FormattingEnabled = True
-        Me.list_addcourse1.Items.AddRange(New Object() {"Class1", "Class2", "Class3", "Class4", "Class5", "Class6", "Class7", "Class8", "Class9", "Class10"})
-        Me.list_addcourse1.Location = New System.Drawing.Point(187, 12)
-        Me.list_addcourse1.Name = "list_addcourse1"
-        Me.list_addcourse1.Size = New System.Drawing.Size(301, 199)
-        Me.list_addcourse1.TabIndex = 7
-        Me.list_addcourse1.Visible = False
+        Me.btn_addcourse.Location = New System.Drawing.Point(414, 362)
+        Me.btn_addcourse.Name = "btn_addcourse"
+        Me.btn_addcourse.Size = New System.Drawing.Size(75, 23)
+        Me.btn_addcourse.TabIndex = 9
+        Me.btn_addcourse.Text = "Add Course"
+        Me.btn_addcourse.UseVisualStyleBackColor = True
         '
-        'btn_add
+        'math_classes
         '
-        Me.btn_add.Location = New System.Drawing.Point(439, 325)
-        Me.btn_add.Name = "btn_add"
-        Me.btn_add.Size = New System.Drawing.Size(75, 23)
-        Me.btn_add.TabIndex = 9
-        Me.btn_add.Text = "Add Course"
-        Me.btn_add.UseVisualStyleBackColor = True
+        Me.math_classes.FormattingEnabled = True
+        Me.math_classes.Items.AddRange(New Object() {"class one", "class two ", "class three ", "class four", "class five ", "class six ", "class seven"})
+        Me.math_classes.Location = New System.Drawing.Point(184, 37)
+        Me.math_classes.Name = "math_classes"
+        Me.math_classes.Size = New System.Drawing.Size(305, 319)
+        Me.math_classes.TabIndex = 10
+        Me.math_classes.Visible = False
+        '
+        'engineering_classes
+        '
+        Me.engineering_classes.FormattingEnabled = True
+        Me.engineering_classes.Items.AddRange(New Object() {"class one", "class two ", "class three ", "class four", "class five ", "class six ", "class seven"})
+        Me.engineering_classes.Location = New System.Drawing.Point(184, 37)
+        Me.engineering_classes.Name = "engineering_classes"
+        Me.engineering_classes.Size = New System.Drawing.Size(305, 304)
+        Me.engineering_classes.TabIndex = 11
+        Me.engineering_classes.Visible = False
+        '
+        'chemistry_classes
+        '
+        Me.chemistry_classes.FormattingEnabled = True
+        Me.chemistry_classes.Items.AddRange(New Object() {"class one", "class two ", "class three ", "class four", "class five ", "class six ", "class seven"})
+        Me.chemistry_classes.Location = New System.Drawing.Point(184, 37)
+        Me.chemistry_classes.Name = "chemistry_classes"
+        Me.chemistry_classes.Size = New System.Drawing.Size(305, 289)
+        Me.chemistry_classes.TabIndex = 12
+        Me.chemistry_classes.Visible = False
+        '
+        'science_classes
+        '
+        Me.science_classes.FormattingEnabled = True
+        Me.science_classes.Items.AddRange(New Object() {"class one", "class two ", "class three ", "class four", "class five ", "class six ", "class seven"})
+        Me.science_classes.Location = New System.Drawing.Point(184, 37)
+        Me.science_classes.Name = "science_classes"
+        Me.science_classes.Size = New System.Drawing.Size(305, 274)
+        Me.science_classes.TabIndex = 13
+        Me.science_classes.Visible = False
+        '
+        'reading_classes
+        '
+        Me.reading_classes.FormattingEnabled = True
+        Me.reading_classes.Items.AddRange(New Object() {"class one", "class two ", "class three ", "class four", "class five ", "class six ", "class seven"})
+        Me.reading_classes.Location = New System.Drawing.Point(184, 37)
+        Me.reading_classes.Name = "reading_classes"
+        Me.reading_classes.Size = New System.Drawing.Size(305, 259)
+        Me.reading_classes.TabIndex = 14
+        Me.reading_classes.Visible = False
         '
         'Form2a
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(581, 370)
-        Me.Controls.Add(Me.btn_add)
-        Me.Controls.Add(Me.list_addcourse1)
+        Me.ClientSize = New System.Drawing.Size(685, 430)
+        Me.Controls.Add(Me.reading_classes)
+        Me.Controls.Add(Me.science_classes)
+        Me.Controls.Add(Me.chemistry_classes)
+        Me.Controls.Add(Me.engineering_classes)
+        Me.Controls.Add(Me.math_classes)
+        Me.Controls.Add(Me.btn_addcourse)
         Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.btn_search)
         Me.Controls.Add(Me.list_courses)
-        Me.Controls.Add(Me.btn_goback)
         Me.Controls.Add(Me.btn_subject)
         Me.Name = "Form2a"
         Me.Text = "Form2a"
@@ -116,10 +153,13 @@ Partial Class Form2a
     End Sub
 
     Friend WithEvents btn_subject As Button
-    Friend WithEvents btn_goback As Button
     Friend WithEvents list_courses As ListBox
     Friend WithEvents btn_search As Button
     Friend WithEvents btn_back As Button
-    Friend WithEvents list_addcourse1 As ListBox
-    Friend WithEvents btn_add As Button
+    Friend WithEvents btn_addcourse As Button
+    Friend WithEvents math_classes As CheckedListBox
+    Friend WithEvents engineering_classes As CheckedListBox
+    Friend WithEvents chemistry_classes As CheckedListBox
+    Friend WithEvents science_classes As CheckedListBox
+    Friend WithEvents reading_classes As CheckedListBox
 End Class
