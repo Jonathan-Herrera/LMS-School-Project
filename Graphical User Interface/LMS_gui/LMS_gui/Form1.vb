@@ -57,7 +57,12 @@ Public Class Form1
         If txtuser.Text = "username" And txtpass.Text = "password" Then
             ProgressBar1.Show()
             Timer1.Start()
+        ElseIf txtuser.Text <> "username" And txtpass.Text <> "password" Then
+            MessageBox.Show("Sorry, Wrong Username Or Password")
+            txtuser.Clear()
+            txtpass.Clear()
         End If
+
 
     End Sub
 

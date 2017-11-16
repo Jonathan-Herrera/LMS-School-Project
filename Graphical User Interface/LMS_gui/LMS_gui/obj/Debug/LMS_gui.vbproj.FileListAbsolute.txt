@@ -62,3 +62,18 @@ C:\Users\Aissa\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_
 C:\Users\Aissa\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.vbproj.GenerateResource.Cache
 >>>>>>> 11e4802ddd628c34a4ab431e43d5575214125e8a
 C:\Users\Jonathan\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form4.resources
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\bin\Debug\LMS_gui.exe.config
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\bin\Debug\LMS_gui.exe
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\bin\Debug\LMS_gui.pdb
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\bin\Debug\LMS_gui.xml
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.vbprojResolveAssemblyReference.cache
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form1.resources
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form2.resources
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form3.resources
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form2a.resources
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form4.resources
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Resources.resources
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.vbproj.GenerateResource.Cache
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.exe
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.xml
+C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.pdb
