@@ -34,6 +34,7 @@ Partial Class Form1
         Me.lbl_name = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn_login
@@ -132,6 +133,15 @@ Partial Class Form1
         Me.ProgressBar1.TabIndex = 10
         Me.ProgressBar1.Visible = False
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(381, 77)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -141,6 +151,7 @@ Partial Class Form1
         Me.BackgroundImage = Global.LMS_gui.My.Resources.Resources.chalkboard
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(687, 503)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.lbl_name)
         Me.Controls.Add(Me.btn_exit)
@@ -173,4 +184,5 @@ Partial Class Form1
     Friend WithEvents lbl_name As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Button1 As Button
 End Class
