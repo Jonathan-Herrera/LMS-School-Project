@@ -18,8 +18,8 @@
     End Sub
 
     Private Sub LogOutButton_Click(sender As Object, e As EventArgs) Handles LogOutButton.Click
-        Me.Hide()
         Form1.Show()
+        Me.Close()
     End Sub
 
     Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
