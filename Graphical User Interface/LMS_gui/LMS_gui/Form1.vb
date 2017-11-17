@@ -49,8 +49,23 @@ Public Class Form1
     End Sub
 
     Private Sub btn_admin_Click(sender As Object, e As EventArgs) Handles btn_admin.Click
+        ' Adminstrator must input a password to make changes to classes
+
+        Dim Admin_Password As String
+        Admin_Password = InputBox("Password.", "Adminstrator")
+        ' Admin can't access classes until the password is correct
+        If Admin_Password <> "adminpass" Then
+            Do
+                MessageBox.Show("Password is incorrect, Try Again")
+                Admin_Password = InputBox("Password.", "Adminstrator")
+
+
+            Loop Until Admin_Password = "adminpass"
+
+        End If
         Form3.Show()
         Me.Close()
+
     End Sub
 
     Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click

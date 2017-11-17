@@ -42,6 +42,7 @@ Partial Class Form4
         Me.Entry3 = New System.Windows.Forms.TextBox()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.btn_logout = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn_back
@@ -201,11 +202,20 @@ Partial Class Form4
         Me.btn_logout.Text = "Log Out"
         Me.btn_logout.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(179, 331)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 41)
+        Me.Button1.TabIndex = 14
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(809, 396)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btn_logout)
         Me.Controls.Add(Me.btn_add)
         Me.Controls.Add(Me.Entry3)
@@ -247,4 +257,5 @@ Partial Class Form4
     Friend WithEvents Entry3 As TextBox
     Friend WithEvents btn_add As Button
     Friend WithEvents btn_logout As Button
+    Friend WithEvents Button1 As Button
 End Class

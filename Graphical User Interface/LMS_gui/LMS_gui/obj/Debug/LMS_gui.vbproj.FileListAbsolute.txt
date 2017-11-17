@@ -77,3 +77,4 @@ C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface
 C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.exe
 C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.xml
 C:\Users\Anthony Jr\Documents\Github\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.pdb
+C:\Users\Aissa\Documents\GitHub\LMS-School-Project\Graphical User Interface\LMS_gui\LMS_gui\obj\Debug\LMS_gui.Form4.resources

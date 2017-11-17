@@ -12,11 +12,15 @@
         i.SubItems.Add(Entry1.Text)
         i.SubItems.Add(Entry2.Text)
         i.SubItems.Add(Entry3.Text)
+
+
+
     End Sub
 
     Private Sub LogOutButton_Click(sender As Object, e As EventArgs) Handles btn_logout.Click
-
+        Form1.Show()
         Me.Close()
+
     End Sub
 
     Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
