@@ -54,17 +54,11 @@ Public Class Form1
         Dim Admin_Password As String
         Admin_Password = InputBox("Password.", "Adminstrator")
         ' Admin can't access classes until the password is correct
-        If Admin_Password <> "adminpass" Then
-            Do
-                MessageBox.Show("Password is incorrect, Try Again")
-                Admin_Password = InputBox("Password.", "Adminstrator")
-
-
-            Loop Until Admin_Password = "adminpass"
-
+        If Admin_Password = "adminpass" Then
+            Form3.Show()
+            Me.Close()
+        Else MessageBox.Show("incorrect password")
         End If
-        Form3.Show()
-        Me.Close()
 
     End Sub
 
@@ -92,6 +86,7 @@ Public Class Form1
     Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
 
     End Sub
+
 End Class
 
 
