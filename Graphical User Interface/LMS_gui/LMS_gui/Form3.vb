@@ -4,7 +4,7 @@
         Me.Close()
     End Sub
 
-    Private Sub btn_modify_student_record_Click(sender As Object, e As EventArgs) Handles btn_modify_student_record.Click
+    Private Sub btn_modify_student_record_Click(sender As Object, e As EventArgs) 
         Modify_Student_Record.Show()
         Me.Close()
     End Sub

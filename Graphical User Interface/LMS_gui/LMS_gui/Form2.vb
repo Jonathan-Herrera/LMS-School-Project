@@ -16,13 +16,22 @@
 
     End Sub
 
-    Private Sub btn_add_course_Click(sender As Object, e As EventArgs) Handles btn_add_course.Click
-        registration.Show()
-        Me.Close()
-    End Sub
 
     Private Sub btn_drop_Click(sender As Object, e As EventArgs) Handles btn_drop.Click
-        registration.Show()
-        Me.Close()
+        TableBindingSource.RemoveCurrent()
+
+    End Sub
+
+    Private Sub TableBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles TableBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.TableBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.StudentsDataSet)
+
+    End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'StudentsDataSet.Table' table. You can move, or remove it, as needed.
+        Me.TableTableAdapter.Fill(Me.StudentsDataSet.Table)
+
     End Sub
 End Class

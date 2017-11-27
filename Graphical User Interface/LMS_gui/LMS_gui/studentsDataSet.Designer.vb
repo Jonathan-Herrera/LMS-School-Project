@@ -295,6 +295,16 @@ Partial Public Class studentsDataSet
         
         Private columnPhone_Number As Global.System.Data.DataColumn
         
+        Private columnStudent_Id As Global.System.Data.DataColumn
+        
+        Private columnClass_ As Global.System.Data.DataColumn
+        
+        Private columnTest_1 As Global.System.Data.DataColumn
+        
+        Private columnTest_2 As Global.System.Data.DataColumn
+        
+        Private columnTest_3 As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Sub New()
@@ -379,6 +389,46 @@ Partial Public Class studentsDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property Student_IdColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnStudent_Id
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property Class_Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnClass_
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property Test_1Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTest_1
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property Test_2Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTest_2
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public ReadOnly Property Test_3Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTest_3
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -415,9 +465,9 @@ Partial Public Class studentsDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
-        Public Overloads Function AddTableRow(ByVal Id As Integer, ByVal First_Name As String, ByVal Last_Name As String, ByVal Username As String, ByVal Password As String, ByVal Phone_Number As String) As TableRow
+        Public Overloads Function AddTableRow(ByVal Id As Integer, ByVal First_Name As String, ByVal Last_Name As String, ByVal Username As String, ByVal Password As String, ByVal Phone_Number As String, ByVal Student_Id As Integer, ByVal Class_ As String, ByVal Test_1 As Integer, ByVal Test_2 As Integer, ByVal Test_3 As Integer) As TableRow
             Dim rowTableRow As TableRow = CType(Me.NewRow,TableRow)
-            Dim columnValuesArray() As Object = New Object() {Id, First_Name, Last_Name, Username, Password, Phone_Number}
+            Dim columnValuesArray() As Object = New Object() {Id, First_Name, Last_Name, Username, Password, Phone_Number, Student_Id, Class_, Test_1, Test_2, Test_3}
             rowTableRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowTableRow)
             Return rowTableRow
@@ -452,6 +502,11 @@ Partial Public Class studentsDataSet
             Me.columnUsername = MyBase.Columns("Username")
             Me.columnPassword = MyBase.Columns("Password")
             Me.columnPhone_Number = MyBase.Columns("Phone Number")
+            Me.columnStudent_Id = MyBase.Columns("Student Id")
+            Me.columnClass_ = MyBase.Columns("Class ")
+            Me.columnTest_1 = MyBase.Columns("Test 1")
+            Me.columnTest_2 = MyBase.Columns("Test 2")
+            Me.columnTest_3 = MyBase.Columns("Test 3")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -469,19 +524,25 @@ Partial Public Class studentsDataSet
             MyBase.Columns.Add(Me.columnPassword)
             Me.columnPhone_Number = New Global.System.Data.DataColumn("Phone Number", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnPhone_Number)
+            Me.columnStudent_Id = New Global.System.Data.DataColumn("Student Id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnStudent_Id)
+            Me.columnClass_ = New Global.System.Data.DataColumn("Class ", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnClass_)
+            Me.columnTest_1 = New Global.System.Data.DataColumn("Test 1", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTest_1)
+            Me.columnTest_2 = New Global.System.Data.DataColumn("Test 2", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTest_2)
+            Me.columnTest_3 = New Global.System.Data.DataColumn("Test 3", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTest_3)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnId}, true))
             Me.columnId.AllowDBNull = false
             Me.columnId.Unique = true
-            Me.columnFirst_Name.AllowDBNull = false
             Me.columnFirst_Name.MaxLength = 15
-            Me.columnLast_Name.AllowDBNull = false
             Me.columnLast_Name.MaxLength = 15
-            Me.columnUsername.AllowDBNull = false
             Me.columnUsername.MaxLength = 10
-            Me.columnPassword.AllowDBNull = false
             Me.columnPassword.MaxLength = 10
-            Me.columnPhone_Number.AllowDBNull = false
             Me.columnPhone_Number.MaxLength = 10
+            Me.columnClass_.MaxLength = 10
             Me.ExtendedProperties.Add("Generator_RowClassName", "TableRow")
             Me.ExtendedProperties.Add("Generator_RowEvArgName", "TableRowChangeEvent")
             Me.ExtendedProperties.Add("Generator_RowEvHandlerName", "TableRowChangeEventHandler")
@@ -648,7 +709,11 @@ Partial Public Class studentsDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Property First_Name() As String
             Get
-                Return CType(Me(Me.tableTable.First_NameColumn),String)
+                Try 
+                    Return CType(Me(Me.tableTable.First_NameColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'First Name' in table 'Table' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableTable.First_NameColumn) = value
@@ -659,7 +724,11 @@ Partial Public Class studentsDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Property Last_Name() As String
             Get
-                Return CType(Me(Me.tableTable.Last_NameColumn),String)
+                Try 
+                    Return CType(Me(Me.tableTable.Last_NameColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Last Name' in table 'Table' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableTable.Last_NameColumn) = value
@@ -670,7 +739,11 @@ Partial Public Class studentsDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Property Username() As String
             Get
-                Return CType(Me(Me.tableTable.UsernameColumn),String)
+                Try 
+                    Return CType(Me(Me.tableTable.UsernameColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Username' in table 'Table' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableTable.UsernameColumn) = value
@@ -681,7 +754,11 @@ Partial Public Class studentsDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Property Password() As String
             Get
-                Return CType(Me(Me.tableTable.PasswordColumn),String)
+                Try 
+                    Return CType(Me(Me.tableTable.PasswordColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Password' in table 'Table' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableTable.PasswordColumn) = value
@@ -692,12 +769,211 @@ Partial Public Class studentsDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Public Property Phone_Number() As String
             Get
-                Return CType(Me(Me.tableTable.Phone_NumberColumn),String)
+                Try 
+                    Return CType(Me(Me.tableTable.Phone_NumberColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Phone Number' in table 'Table' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableTable.Phone_NumberColumn) = value
             End Set
         End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property Student_Id() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableTable.Student_IdColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Student Id' in table 'Table' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableTable.Student_IdColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property Class_() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableTable.Class_Column),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Class ' in table 'Table' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableTable.Class_Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property Test_1() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableTable.Test_1Column),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Test 1' in table 'Table' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableTable.Test_1Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property Test_2() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableTable.Test_2Column),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Test 2' in table 'Table' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableTable.Test_2Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Property Test_3() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableTable.Test_3Column),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Test 3' in table 'Table' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableTable.Test_3Column) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsFirst_NameNull() As Boolean
+            Return Me.IsNull(Me.tableTable.First_NameColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetFirst_NameNull()
+            Me(Me.tableTable.First_NameColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsLast_NameNull() As Boolean
+            Return Me.IsNull(Me.tableTable.Last_NameColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetLast_NameNull()
+            Me(Me.tableTable.Last_NameColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsUsernameNull() As Boolean
+            Return Me.IsNull(Me.tableTable.UsernameColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetUsernameNull()
+            Me(Me.tableTable.UsernameColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsPasswordNull() As Boolean
+            Return Me.IsNull(Me.tableTable.PasswordColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetPasswordNull()
+            Me(Me.tableTable.PasswordColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsPhone_NumberNull() As Boolean
+            Return Me.IsNull(Me.tableTable.Phone_NumberColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetPhone_NumberNull()
+            Me(Me.tableTable.Phone_NumberColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsStudent_IdNull() As Boolean
+            Return Me.IsNull(Me.tableTable.Student_IdColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetStudent_IdNull()
+            Me(Me.tableTable.Student_IdColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsClass_Null() As Boolean
+            Return Me.IsNull(Me.tableTable.Class_Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetClass_Null()
+            Me(Me.tableTable.Class_Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsTest_1Null() As Boolean
+            Return Me.IsNull(Me.tableTable.Test_1Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetTest_1Null()
+            Me(Me.tableTable.Test_1Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsTest_2Null() As Boolean
+            Return Me.IsNull(Me.tableTable.Test_2Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetTest_2Null()
+            Me(Me.tableTable.Test_2Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Function IsTest_3Null() As Boolean
+            Return Me.IsNull(Me.tableTable.Test_3Column)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
+        Public Sub SetTest_3Null()
+            Me(Me.tableTable.Test_3Column) = Global.System.Convert.DBNull
+        End Sub
     End Class
     
     '''<summary>
@@ -872,26 +1148,56 @@ Namespace studentsDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Username", "Username")
             tableMapping.ColumnMappings.Add("Password", "Password")
             tableMapping.ColumnMappings.Add("Phone Number", "Phone Number")
+            tableMapping.ColumnMappings.Add("Student Id", "Student Id")
+            tableMapping.ColumnMappings.Add("Class ", "Class ")
+            tableMapping.ColumnMappings.Add("Test 1", "Test 1")
+            tableMapping.ColumnMappings.Add("Test 2", "Test 2")
+            tableMapping.ColumnMappings.Add("Test 3", "Test 3")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Table] WHERE (([Id] = @Original_Id) AND ([First Name] = @Origi"& _ 
-                "nal_First_Name) AND ([Last Name] = @Original_Last_Name) AND ([Username] = @Origi"& _ 
-                "nal_Username) AND ([Password] = @Original_Password) AND ([Phone Number] = @Origi"& _ 
-                "nal_Phone_Number))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Table] WHERE (([Id] = @Original_Id) AND ((@IsNull_First_Name ="& _ 
+                " 1 AND [First Name] IS NULL) OR ([First Name] = @Original_First_Name)) AND ((@Is"& _ 
+                "Null_Last_Name = 1 AND [Last Name] IS NULL) OR ([Last Name] = @Original_Last_Nam"& _ 
+                "e)) AND ((@IsNull_Username = 1 AND [Username] IS NULL) OR ([Username] = @Origina"& _ 
+                "l_Username)) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] ="& _ 
+                " @Original_Password)) AND ((@IsNull_Phone_Number = 1 AND [Phone Number] IS NULL)"& _ 
+                " OR ([Phone Number] = @Original_Phone_Number)) AND ((@IsNull_Student_Id = 1 AND "& _ 
+                "[Student Id] IS NULL) OR ([Student Id] = @Original_Student_Id)) AND ((@IsNull_Cl"& _ 
+                "ass_ = 1 AND [Class ] IS NULL) OR ([Class ] = @Original_Class_)) AND ((@IsNull_T"& _ 
+                "est_1 = 1 AND [Test 1] IS NULL) OR ([Test 1] = @Original_Test_1)) AND ((@IsNull_"& _ 
+                "Test_2 = 1 AND [Test 2] IS NULL) OR ([Test 2] = @Original_Test_2)) AND ((@IsNull"& _ 
+                "_Test_3 = 1 AND [Test 3] IS NULL) OR ([Test 3] = @Original_Test_3)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_First_Name", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "First Name", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_First_Name", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "First Name", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Last_Name", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Last Name", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Last_Name", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Last Name", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Username", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Username", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Username", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Username", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Password", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Password", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Password", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Password", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Phone_Number", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Phone Number", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Phone_Number", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Phone Number", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Student_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Student Id", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Student_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Student Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Class_", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Class ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Class_", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Class ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Test_1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 1", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Test_1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 1", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Test_2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 2", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Test_2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 2", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Test_3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 3", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Test_3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 3", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Table] ([Id], [First Name], [Last Name], [Username], [Password"& _ 
-                "], [Phone Number]) VALUES (@Id, @First_Name, @Last_Name, @Username, @Password, @"& _ 
-                "Phone_Number);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Id, [First Name], [Last Name], Username, Password, [Phone"& _ 
-                " Number] FROM [Table] WHERE (Id = @Id)"
+                "], [Phone Number], [Student Id], [Class ], [Test 1], [Test 2], [Test 3]) VALUES "& _ 
+                "(@Id, @First_Name, @Last_Name, @Username, @Password, @Phone_Number, @Student_Id,"& _ 
+                " @Class_, @Test_1, @Test_2, @Test_3);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Id, [First Name], [Last Name], Use"& _ 
+                "rname, Password, [Phone Number], [Student Id], [Class ], [Test 1], [Test 2], [Te"& _ 
+                "st 3] FROM [Table] WHERE (Id = @Id)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@First_Name", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "First Name", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -899,15 +1205,30 @@ Namespace studentsDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Username", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Username", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Password", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Password", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Phone_Number", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Phone Number", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Student_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Student Id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Class_", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Class ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Test_1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Test_2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 2", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Test_3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 3", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Table] SET [Id] = @Id, [First Name] = @First_Name, [Last Name] = @L"& _ 
                 "ast_Name, [Username] = @Username, [Password] = @Password, [Phone Number] = @Phon"& _ 
-                "e_Number WHERE (([Id] = @Original_Id) AND ([First Name] = @Original_First_Name) "& _ 
-                "AND ([Last Name] = @Original_Last_Name) AND ([Username] = @Original_Username) AN"& _ 
-                "D ([Password] = @Original_Password) AND ([Phone Number] = @Original_Phone_Number"& _ 
-                "));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Id, [First Name], [Last Name], Username, Password, [Phone Number] FR"& _ 
-                "OM [Table] WHERE (Id = @Id)"
+                "e_Number, [Student Id] = @Student_Id, [Class ] = @Class_, [Test 1] = @Test_1, [T"& _ 
+                "est 2] = @Test_2, [Test 3] = @Test_3 WHERE (([Id] = @Original_Id) AND ((@IsNull_"& _ 
+                "First_Name = 1 AND [First Name] IS NULL) OR ([First Name] = @Original_First_Name"& _ 
+                ")) AND ((@IsNull_Last_Name = 1 AND [Last Name] IS NULL) OR ([Last Name] = @Origi"& _ 
+                "nal_Last_Name)) AND ((@IsNull_Username = 1 AND [Username] IS NULL) OR ([Username"& _ 
+                "] = @Original_Username)) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ("& _ 
+                "[Password] = @Original_Password)) AND ((@IsNull_Phone_Number = 1 AND [Phone Numb"& _ 
+                "er] IS NULL) OR ([Phone Number] = @Original_Phone_Number)) AND ((@IsNull_Student"& _ 
+                "_Id = 1 AND [Student Id] IS NULL) OR ([Student Id] = @Original_Student_Id)) AND "& _ 
+                "((@IsNull_Class_ = 1 AND [Class ] IS NULL) OR ([Class ] = @Original_Class_)) AND"& _ 
+                " ((@IsNull_Test_1 = 1 AND [Test 1] IS NULL) OR ([Test 1] = @Original_Test_1)) AN"& _ 
+                "D ((@IsNull_Test_2 = 1 AND [Test 2] IS NULL) OR ([Test 2] = @Original_Test_2)) A"& _ 
+                "ND ((@IsNull_Test_3 = 1 AND [Test 3] IS NULL) OR ([Test 3] = @Original_Test_3)))"& _ 
+                ";"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Id, [First Name], [Last Name], Username, Password, [Phone Number], [St"& _ 
+                "udent Id], [Class ], [Test 1], [Test 2], [Test 3] FROM [Table] WHERE (Id = @Id)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@First_Name", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "First Name", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -915,19 +1236,39 @@ Namespace studentsDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Username", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Username", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Password", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Password", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Phone_Number", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Phone Number", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Student_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Student Id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Class_", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Class ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Test_1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Test_2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 2", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Test_3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 3", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_First_Name", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "First Name", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_First_Name", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "First Name", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Last_Name", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Last Name", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Last_Name", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Last Name", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Username", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Username", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Username", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Username", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Password", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Password", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Password", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Password", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Phone_Number", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Phone Number", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Phone_Number", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Phone Number", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Student_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Student Id", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Student_Id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Student Id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Class_", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Class ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Class_", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Class ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Test_1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 1", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Test_1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 1", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Test_2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 2", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Test_2", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 2", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Test_3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 3", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Test_3", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Test 3", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.LMS_gui.My.MySettings.Default.studentsConnectionString
+            Me._connection.ConnectionString = Global.LMS_gui.My.MySettings.Default.studentsConnectionString1
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -936,8 +1277,8 @@ Namespace studentsDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT Id, [First Name], [Last Name], Username, Password, [Phone Number] FROM dbo"& _ 
-                ".[Table]"
+            Me._commandCollection(0).CommandText = "SELECT Id, [First Name], [Last Name], Username, Password, [Phone Number], [Studen"& _ 
+                "t Id], [Class ], [Test 1], [Test 2], [Test 3] FROM dbo.[Table]"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -997,32 +1338,77 @@ Namespace studentsDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_Id As Integer, ByVal Original_First_Name As String, ByVal Original_Last_Name As String, ByVal Original_Username As String, ByVal Original_Password As String, ByVal Original_Phone_Number As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_Id As Integer, ByVal Original_First_Name As String, ByVal Original_Last_Name As String, ByVal Original_Username As String, ByVal Original_Password As String, ByVal Original_Phone_Number As String, ByVal Original_Student_Id As Global.System.Nullable(Of Integer), ByVal Original_Class_ As String, ByVal Original_Test_1 As Global.System.Nullable(Of Integer), ByVal Original_Test_2 As Global.System.Nullable(Of Integer), ByVal Original_Test_3 As Global.System.Nullable(Of Integer)) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_Id,Integer)
             If (Original_First_Name Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_First_Name")
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_First_Name,String)
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_First_Name,String)
             End If
             If (Original_Last_Name Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_Last_Name")
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_Last_Name,String)
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_Last_Name,String)
             End If
             If (Original_Username Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_Username")
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Username,String)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_Username,String)
             End If
             If (Original_Password Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_Password")
+                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_Password,String)
+                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_Password,String)
             End If
             If (Original_Phone_Number Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_Phone_Number")
+                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_Phone_Number,String)
+                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(10).Value = CType(Original_Phone_Number,String)
+            End If
+            If (Original_Student_Id.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(12).Value = CType(Original_Student_Id.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(12).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Class_ Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(14).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(Original_Class_,String)
+            End If
+            If (Original_Test_1.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(16).Value = CType(Original_Test_1.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(16).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Test_2.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(Original_Test_2.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Test_3.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(20).Value = CType(Original_Test_3.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(20).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1043,32 +1429,57 @@ Namespace studentsDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Id As Integer, ByVal First_Name As String, ByVal Last_Name As String, ByVal Username As String, ByVal Password As String, ByVal Phone_Number As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal Id As Integer, ByVal First_Name As String, ByVal Last_Name As String, ByVal Username As String, ByVal Password As String, ByVal Phone_Number As String, ByVal Student_Id As Global.System.Nullable(Of Integer), ByVal Class_ As String, ByVal Test_1 As Global.System.Nullable(Of Integer), ByVal Test_2 As Global.System.Nullable(Of Integer), ByVal Test_3 As Global.System.Nullable(Of Integer)) As Integer
             Me.Adapter.InsertCommand.Parameters(0).Value = CType(Id,Integer)
             If (First_Name Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("First_Name")
+                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(First_Name,String)
             End If
             If (Last_Name Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Last_Name")
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(2).Value = CType(Last_Name,String)
             End If
             If (Username Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Username")
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(3).Value = CType(Username,String)
             End If
             If (Password Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Password")
+                Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(4).Value = CType(Password,String)
             End If
             If (Phone_Number Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Phone_Number")
+                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(5).Value = CType(Phone_Number,String)
+            End If
+            If (Student_Id.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(Student_Id.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
+            End If
+            If (Class_ Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(Class_,String)
+            End If
+            If (Test_1.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(Test_1.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(8).Value = Global.System.DBNull.Value
+            End If
+            If (Test_2.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(9).Value = CType(Test_2.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(9).Value = Global.System.DBNull.Value
+            End If
+            If (Test_3.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(10).Value = CType(Test_3.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1089,58 +1500,150 @@ Namespace studentsDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal Id As Integer, ByVal First_Name As String, ByVal Last_Name As String, ByVal Username As String, ByVal Password As String, ByVal Phone_Number As String, ByVal Original_Id As Integer, ByVal Original_First_Name As String, ByVal Original_Last_Name As String, ByVal Original_Username As String, ByVal Original_Password As String, ByVal Original_Phone_Number As String) As Integer
+        Public Overloads Overridable Function Update( _
+                    ByVal Id As Integer,  _
+                    ByVal First_Name As String,  _
+                    ByVal Last_Name As String,  _
+                    ByVal Username As String,  _
+                    ByVal Password As String,  _
+                    ByVal Phone_Number As String,  _
+                    ByVal Student_Id As Global.System.Nullable(Of Integer),  _
+                    ByVal Class_ As String,  _
+                    ByVal Test_1 As Global.System.Nullable(Of Integer),  _
+                    ByVal Test_2 As Global.System.Nullable(Of Integer),  _
+                    ByVal Test_3 As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Id As Integer,  _
+                    ByVal Original_First_Name As String,  _
+                    ByVal Original_Last_Name As String,  _
+                    ByVal Original_Username As String,  _
+                    ByVal Original_Password As String,  _
+                    ByVal Original_Phone_Number As String,  _
+                    ByVal Original_Student_Id As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Class_ As String,  _
+                    ByVal Original_Test_1 As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Test_2 As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Test_3 As Global.System.Nullable(Of Integer)) As Integer
             Me.Adapter.UpdateCommand.Parameters(0).Value = CType(Id,Integer)
             If (First_Name Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("First_Name")
+                Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = CType(First_Name,String)
             End If
             If (Last_Name Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Last_Name")
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Last_Name,String)
             End If
             If (Username Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Username")
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Username,String)
             End If
             If (Password Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Password")
+                Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Password,String)
             End If
             If (Phone_Number Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Phone_Number")
+                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Phone_Number,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_Id,Integer)
-            If (Original_First_Name Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_First_Name")
+            If (Student_Id.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Student_Id.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_First_Name,String)
+                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
+            End If
+            If (Class_ Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Class_,String)
+            End If
+            If (Test_1.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Test_1.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
+            End If
+            If (Test_2.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Test_2.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
+            End If
+            If (Test_3.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Test_3.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_Id,Integer)
+            If (Original_First_Name Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_First_Name,String)
             End If
             If (Original_Last_Name Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_Last_Name")
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Original_Last_Name,String)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_Last_Name,String)
             End If
             If (Original_Username Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_Username")
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_Username,String)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_Username,String)
             End If
             If (Original_Password Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_Password")
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Original_Password,String)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(Original_Password,String)
             End If
             If (Original_Phone_Number Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_Phone_Number")
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_Phone_Number,String)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(Original_Phone_Number,String)
+            End If
+            If (Original_Student_Id.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_Student_Id.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(23).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Class_ Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_Class_,String)
+            End If
+            If (Original_Test_1.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_Test_1.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Test_2.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_Test_2.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Test_3.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(Original_Test_3.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1161,8 +1664,29 @@ Namespace studentsDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal First_Name As String, ByVal Last_Name As String, ByVal Username As String, ByVal Password As String, ByVal Phone_Number As String, ByVal Original_Id As Integer, ByVal Original_First_Name As String, ByVal Original_Last_Name As String, ByVal Original_Username As String, ByVal Original_Password As String, ByVal Original_Phone_Number As String) As Integer
-            Return Me.Update(Original_Id, First_Name, Last_Name, Username, Password, Phone_Number, Original_Id, Original_First_Name, Original_Last_Name, Original_Username, Original_Password, Original_Phone_Number)
+        Public Overloads Overridable Function Update( _
+                    ByVal First_Name As String,  _
+                    ByVal Last_Name As String,  _
+                    ByVal Username As String,  _
+                    ByVal Password As String,  _
+                    ByVal Phone_Number As String,  _
+                    ByVal Student_Id As Global.System.Nullable(Of Integer),  _
+                    ByVal Class_ As String,  _
+                    ByVal Test_1 As Global.System.Nullable(Of Integer),  _
+                    ByVal Test_2 As Global.System.Nullable(Of Integer),  _
+                    ByVal Test_3 As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Id As Integer,  _
+                    ByVal Original_First_Name As String,  _
+                    ByVal Original_Last_Name As String,  _
+                    ByVal Original_Username As String,  _
+                    ByVal Original_Password As String,  _
+                    ByVal Original_Phone_Number As String,  _
+                    ByVal Original_Student_Id As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Class_ As String,  _
+                    ByVal Original_Test_1 As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Test_2 As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Test_3 As Global.System.Nullable(Of Integer)) As Integer
+            Return Me.Update(Original_Id, First_Name, Last_Name, Username, Password, Phone_Number, Student_Id, Class_, Test_1, Test_2, Test_3, Original_Id, Original_First_Name, Original_Last_Name, Original_Username, Original_Password, Original_Phone_Number, Original_Student_Id, Original_Class_, Original_Test_1, Original_Test_2, Original_Test_3)
         End Function
     End Class
     

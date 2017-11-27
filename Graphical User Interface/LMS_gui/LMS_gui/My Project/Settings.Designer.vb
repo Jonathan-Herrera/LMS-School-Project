@@ -75,6 +75,18 @@ Namespace My
                 Return CType(Me("studentsConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Jonathan\Documents\"& _ 
+            "GitHub\LMS-School-Project\Student Database\Student Database\students.mdf"";Integr"& _ 
+            "ated Security=True;Connect Timeout=30")>  _
+        Public ReadOnly Property studentsConnectionString1() As String
+            Get
+                Return CType(Me("studentsConnectionString1"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

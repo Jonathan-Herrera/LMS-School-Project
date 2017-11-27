@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Student_Management
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Student_Management
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim IdLabel As System.Windows.Forms.Label
@@ -29,14 +29,18 @@ Partial Class Student_Management
         Dim UsernameLabel As System.Windows.Forms.Label
         Dim PasswordLabel As System.Windows.Forms.Label
         Dim Phone_NumberLabel As System.Windows.Forms.Label
+        Dim Student_IdLabel As System.Windows.Forms.Label
+        Dim Class_Label As System.Windows.Forms.Label
+        Dim Test_1Label As System.Windows.Forms.Label
+        Dim Test_2Label As System.Windows.Forms.Label
+        Dim Test_3Label As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Student_Management))
         Me.btn_back = New System.Windows.Forms.Button()
-        Me.StudentsDataSet = New LMS_gui.studentsDataSet()
-        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TableTableAdapter = New LMS_gui.studentsDataSetTableAdapters.TableTableAdapter()
-        Me.TableAdapterManager = New LMS_gui.studentsDataSetTableAdapters.TableAdapterManager()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.StudentsDataSet = New LMS_gui.studentsDataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -55,116 +59,168 @@ Partial Class Student_Management
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txt_id = New System.Windows.Forms.TextBox()
-        Me.txt_first_name = New System.Windows.Forms.TextBox()
-        Me.txt_last_name = New System.Windows.Forms.TextBox()
-        Me.txt_user = New System.Windows.Forms.TextBox()
-        Me.txt_pass = New System.Windows.Forms.TextBox()
-        Me.txt_phone_number = New System.Windows.Forms.TextBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btn_save = New System.Windows.Forms.Button()
         Me.btn_delete = New System.Windows.Forms.Button()
         Me.btn_next = New System.Windows.Forms.Button()
         Me.btn_insert = New System.Windows.Forms.Button()
         Me.btn_previous = New System.Windows.Forms.Button()
+        Me.TableTableAdapter = New LMS_gui.studentsDataSetTableAdapters.TableTableAdapter()
+        Me.TableAdapterManager = New LMS_gui.studentsDataSetTableAdapters.TableAdapterManager()
+        Me.txt_id = New System.Windows.Forms.TextBox()
+        Me.txt_fname = New System.Windows.Forms.TextBox()
+        Me.txt_lname = New System.Windows.Forms.TextBox()
+        Me.txt_user = New System.Windows.Forms.TextBox()
+        Me.txt_pass = New System.Windows.Forms.TextBox()
+        Me.txt_phone = New System.Windows.Forms.TextBox()
+        Me.txt_studentid = New System.Windows.Forms.TextBox()
+        Me.txt_class = New System.Windows.Forms.TextBox()
+        Me.txt_t1 = New System.Windows.Forms.TextBox()
+        Me.txt_t2 = New System.Windows.Forms.TextBox()
+        Me.txt_t3 = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         IdLabel = New System.Windows.Forms.Label()
         First_NameLabel = New System.Windows.Forms.Label()
         Last_NameLabel = New System.Windows.Forms.Label()
         UsernameLabel = New System.Windows.Forms.Label()
         PasswordLabel = New System.Windows.Forms.Label()
         Phone_NumberLabel = New System.Windows.Forms.Label()
-        CType(Me.StudentsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Student_IdLabel = New System.Windows.Forms.Label()
+        Class_Label = New System.Windows.Forms.Label()
+        Test_1Label = New System.Windows.Forms.Label()
+        Test_2Label = New System.Windows.Forms.Label()
+        Test_3Label = New System.Windows.Forms.Label()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.TableBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableBindingNavigator.SuspendLayout()
+        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.StudentsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'IdLabel
         '
         IdLabel.AutoSize = True
-        IdLabel.Location = New System.Drawing.Point(61, 72)
+        IdLabel.Location = New System.Drawing.Point(11, 33)
         IdLabel.Name = "IdLabel"
         IdLabel.Size = New System.Drawing.Size(19, 13)
-        IdLabel.TabIndex = 2
+        IdLabel.TabIndex = 15
         IdLabel.Text = "Id:"
         '
         'First_NameLabel
         '
         First_NameLabel.AutoSize = True
-        First_NameLabel.Location = New System.Drawing.Point(61, 98)
+        First_NameLabel.Location = New System.Drawing.Point(11, 59)
         First_NameLabel.Name = "First_NameLabel"
         First_NameLabel.Size = New System.Drawing.Size(60, 13)
-        First_NameLabel.TabIndex = 4
+        First_NameLabel.TabIndex = 17
         First_NameLabel.Text = "First Name:"
         '
         'Last_NameLabel
         '
         Last_NameLabel.AutoSize = True
-        Last_NameLabel.Location = New System.Drawing.Point(61, 124)
+        Last_NameLabel.Location = New System.Drawing.Point(11, 85)
         Last_NameLabel.Name = "Last_NameLabel"
         Last_NameLabel.Size = New System.Drawing.Size(61, 13)
-        Last_NameLabel.TabIndex = 6
+        Last_NameLabel.TabIndex = 19
         Last_NameLabel.Text = "Last Name:"
         '
         'UsernameLabel
         '
         UsernameLabel.AutoSize = True
-        UsernameLabel.Location = New System.Drawing.Point(61, 150)
+        UsernameLabel.Location = New System.Drawing.Point(11, 111)
         UsernameLabel.Name = "UsernameLabel"
         UsernameLabel.Size = New System.Drawing.Size(58, 13)
-        UsernameLabel.TabIndex = 8
+        UsernameLabel.TabIndex = 21
         UsernameLabel.Text = "Username:"
         '
         'PasswordLabel
         '
         PasswordLabel.AutoSize = True
-        PasswordLabel.Location = New System.Drawing.Point(61, 176)
+        PasswordLabel.Location = New System.Drawing.Point(11, 137)
         PasswordLabel.Name = "PasswordLabel"
         PasswordLabel.Size = New System.Drawing.Size(56, 13)
-        PasswordLabel.TabIndex = 10
+        PasswordLabel.TabIndex = 23
         PasswordLabel.Text = "Password:"
         '
         'Phone_NumberLabel
         '
         Phone_NumberLabel.AutoSize = True
-        Phone_NumberLabel.Location = New System.Drawing.Point(61, 202)
+        Phone_NumberLabel.Location = New System.Drawing.Point(11, 163)
         Phone_NumberLabel.Name = "Phone_NumberLabel"
         Phone_NumberLabel.Size = New System.Drawing.Size(81, 13)
-        Phone_NumberLabel.TabIndex = 12
+        Phone_NumberLabel.TabIndex = 25
         Phone_NumberLabel.Text = "Phone Number:"
+        '
+        'Student_IdLabel
+        '
+        Student_IdLabel.AutoSize = True
+        Student_IdLabel.Location = New System.Drawing.Point(235, 33)
+        Student_IdLabel.Name = "Student_IdLabel"
+        Student_IdLabel.Size = New System.Drawing.Size(59, 13)
+        Student_IdLabel.TabIndex = 27
+        Student_IdLabel.Text = "Student Id:"
+        '
+        'Class_Label
+        '
+        Class_Label.AutoSize = True
+        Class_Label.Location = New System.Drawing.Point(235, 59)
+        Class_Label.Name = "Class_Label"
+        Class_Label.Size = New System.Drawing.Size(38, 13)
+        Class_Label.TabIndex = 29
+        Class_Label.Text = "Class :"
+        '
+        'Test_1Label
+        '
+        Test_1Label.AutoSize = True
+        Test_1Label.Location = New System.Drawing.Point(235, 85)
+        Test_1Label.Name = "Test_1Label"
+        Test_1Label.Size = New System.Drawing.Size(40, 13)
+        Test_1Label.TabIndex = 31
+        Test_1Label.Text = "Test 1:"
+        '
+        'Test_2Label
+        '
+        Test_2Label.AutoSize = True
+        Test_2Label.Location = New System.Drawing.Point(235, 111)
+        Test_2Label.Name = "Test_2Label"
+        Test_2Label.Size = New System.Drawing.Size(40, 13)
+        Test_2Label.TabIndex = 33
+        Test_2Label.Text = "Test 2:"
+        '
+        'Test_3Label
+        '
+        Test_3Label.AutoSize = True
+        Test_3Label.Location = New System.Drawing.Point(235, 137)
+        Test_3Label.Name = "Test_3Label"
+        Test_3Label.Size = New System.Drawing.Size(40, 13)
+        Test_3Label.TabIndex = 35
+        Test_3Label.Text = "Test 3:"
         '
         'btn_back
         '
-        Me.btn_back.Location = New System.Drawing.Point(44, 475)
+        Me.btn_back.Location = New System.Drawing.Point(12, 526)
         Me.btn_back.Name = "btn_back"
         Me.btn_back.Size = New System.Drawing.Size(75, 23)
         Me.btn_back.TabIndex = 0
         Me.btn_back.Text = "Go Back"
         Me.btn_back.UseVisualStyleBackColor = True
         '
-        'StudentsDataSet
+        'GroupBox1
         '
-        Me.StudentsDataSet.DataSetName = "studentsDataSet"
-        Me.StudentsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TableBindingSource
-        '
-        Me.TableBindingSource.DataMember = "Table"
-        Me.TableBindingSource.DataSource = Me.StudentsDataSet
-        '
-        'TableTableAdapter
-        '
-        Me.TableTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.TableTableAdapter = Me.TableTableAdapter
-        Me.TableAdapterManager.UpdateOrder = LMS_gui.studentsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.GroupBox1.Controls.Add(Me.TableBindingNavigator)
+        Me.GroupBox1.Controls.Add(Me.TableDataGridView)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 28)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(1141, 231)
+        Me.GroupBox1.TabIndex = 3
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Student Records"
         '
         'TableBindingNavigator
         '
@@ -174,15 +230,15 @@ Partial Class Student_Management
         Me.TableBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
         Me.TableBindingNavigator.Dock = System.Windows.Forms.DockStyle.None
         Me.TableBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.TableBindingNavigatorSaveItem})
-        Me.TableBindingNavigator.Location = New System.Drawing.Point(7, 26)
+        Me.TableBindingNavigator.Location = New System.Drawing.Point(318, 16)
         Me.TableBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
         Me.TableBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
         Me.TableBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
         Me.TableBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.TableBindingNavigator.Name = "TableBindingNavigator"
         Me.TableBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.TableBindingNavigator.Size = New System.Drawing.Size(278, 25)
-        Me.TableBindingNavigator.TabIndex = 1
+        Me.TableBindingNavigator.Size = New System.Drawing.Size(309, 25)
+        Me.TableBindingNavigator.TabIndex = 16
         Me.TableBindingNavigator.Text = "BindingNavigator1"
         '
         'BindingNavigatorAddNewItem
@@ -193,6 +249,16 @@ Partial Class Student_Management
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
         Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'TableBindingSource
+        '
+        Me.TableBindingSource.DataMember = "Table"
+        Me.TableBindingSource.DataSource = Me.StudentsDataSet
+        '
+        'StudentsDataSet
+        '
+        Me.StudentsDataSet.DataSetName = "studentsDataSet"
+        Me.StudentsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'BindingNavigatorCountItem
         '
@@ -282,12 +348,12 @@ Partial Class Student_Management
         '
         Me.TableDataGridView.AutoGenerateColumns = False
         Me.TableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.TableDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.TableDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11})
         Me.TableDataGridView.DataSource = Me.TableBindingSource
-        Me.TableDataGridView.Location = New System.Drawing.Point(7, 57)
+        Me.TableDataGridView.Location = New System.Drawing.Point(6, 72)
         Me.TableDataGridView.Name = "TableDataGridView"
-        Me.TableDataGridView.Size = New System.Drawing.Size(650, 287)
-        Me.TableDataGridView.TabIndex = 2
+        Me.TableDataGridView.Size = New System.Drawing.Size(1125, 146)
+        Me.TableDataGridView.TabIndex = 0
         '
         'DataGridViewTextBoxColumn1
         '
@@ -325,82 +391,39 @@ Partial Class Student_Management
         Me.DataGridViewTextBoxColumn6.HeaderText = "Phone Number"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
-        'GroupBox1
+        'DataGridViewTextBoxColumn7
         '
-        Me.GroupBox1.Controls.Add(Me.TableDataGridView)
-        Me.GroupBox1.Controls.Add(Me.TableBindingNavigator)
-        Me.GroupBox1.Location = New System.Drawing.Point(335, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(671, 355)
-        Me.GroupBox1.TabIndex = 3
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Student Records"
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Student Id"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Student Id"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
-        'txt_id
+        'DataGridViewTextBoxColumn8
         '
-        Me.txt_id.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Id", True))
-        Me.txt_id.Location = New System.Drawing.Point(148, 69)
-        Me.txt_id.Name = "txt_id"
-        Me.txt_id.Size = New System.Drawing.Size(139, 20)
-        Me.txt_id.TabIndex = 3
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Class "
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Class "
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         '
-        'txt_first_name
+        'DataGridViewTextBoxColumn9
         '
-        Me.txt_first_name.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "First Name", True))
-        Me.txt_first_name.Location = New System.Drawing.Point(148, 95)
-        Me.txt_first_name.Name = "txt_first_name"
-        Me.txt_first_name.Size = New System.Drawing.Size(139, 20)
-        Me.txt_first_name.TabIndex = 5
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Test 1"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Test 1"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
-        'txt_last_name
+        'DataGridViewTextBoxColumn10
         '
-        Me.txt_last_name.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Last Name", True))
-        Me.txt_last_name.Location = New System.Drawing.Point(148, 121)
-        Me.txt_last_name.Name = "txt_last_name"
-        Me.txt_last_name.Size = New System.Drawing.Size(139, 20)
-        Me.txt_last_name.TabIndex = 7
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "Test 2"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "Test 2"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         '
-        'txt_user
+        'DataGridViewTextBoxColumn11
         '
-        Me.txt_user.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Username", True))
-        Me.txt_user.Location = New System.Drawing.Point(148, 147)
-        Me.txt_user.Name = "txt_user"
-        Me.txt_user.Size = New System.Drawing.Size(139, 20)
-        Me.txt_user.TabIndex = 9
-        '
-        'txt_pass
-        '
-        Me.txt_pass.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Password", True))
-        Me.txt_pass.Location = New System.Drawing.Point(148, 173)
-        Me.txt_pass.Name = "txt_pass"
-        Me.txt_pass.Size = New System.Drawing.Size(139, 20)
-        Me.txt_pass.TabIndex = 11
-        '
-        'txt_phone_number
-        '
-        Me.txt_phone_number.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Phone Number", True))
-        Me.txt_phone_number.Location = New System.Drawing.Point(104, 190)
-        Me.txt_phone_number.Name = "txt_phone_number"
-        Me.txt_phone_number.Size = New System.Drawing.Size(139, 20)
-        Me.txt_phone_number.TabIndex = 13
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.btn_save)
-        Me.GroupBox2.Controls.Add(Me.btn_delete)
-        Me.GroupBox2.Controls.Add(Me.btn_next)
-        Me.GroupBox2.Controls.Add(Me.btn_insert)
-        Me.GroupBox2.Controls.Add(Me.btn_previous)
-        Me.GroupBox2.Controls.Add(Me.txt_phone_number)
-        Me.GroupBox2.Location = New System.Drawing.Point(44, 12)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(274, 355)
-        Me.GroupBox2.TabIndex = 14
-        Me.GroupBox2.TabStop = False
+        Me.DataGridViewTextBoxColumn11.DataPropertyName = "Test 3"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "Test 3"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         '
         'btn_save
         '
-        Me.btn_save.Location = New System.Drawing.Point(184, 321)
+        Me.btn_save.Location = New System.Drawing.Point(472, 127)
         Me.btn_save.Name = "btn_save"
         Me.btn_save.Size = New System.Drawing.Size(75, 23)
         Me.btn_save.TabIndex = 3
@@ -409,7 +432,7 @@ Partial Class Student_Management
         '
         'btn_delete
         '
-        Me.btn_delete.Location = New System.Drawing.Point(87, 266)
+        Me.btn_delete.Location = New System.Drawing.Point(472, 85)
         Me.btn_delete.Name = "btn_delete"
         Me.btn_delete.Size = New System.Drawing.Size(75, 23)
         Me.btn_delete.TabIndex = 15
@@ -418,7 +441,7 @@ Partial Class Student_Management
         '
         'btn_next
         '
-        Me.btn_next.Location = New System.Drawing.Point(168, 237)
+        Me.btn_next.Location = New System.Drawing.Point(98, 230)
         Me.btn_next.Name = "btn_next"
         Me.btn_next.Size = New System.Drawing.Size(75, 23)
         Me.btn_next.TabIndex = 14
@@ -427,7 +450,7 @@ Partial Class Student_Management
         '
         'btn_insert
         '
-        Me.btn_insert.Location = New System.Drawing.Point(87, 237)
+        Me.btn_insert.Location = New System.Drawing.Point(472, 33)
         Me.btn_insert.Name = "btn_insert"
         Me.btn_insert.Size = New System.Drawing.Size(75, 23)
         Me.btn_insert.TabIndex = 2
@@ -436,50 +459,178 @@ Partial Class Student_Management
         '
         'btn_previous
         '
-        Me.btn_previous.Location = New System.Drawing.Point(6, 237)
+        Me.btn_previous.Location = New System.Drawing.Point(6, 230)
         Me.btn_previous.Name = "btn_previous"
         Me.btn_previous.Size = New System.Drawing.Size(75, 23)
         Me.btn_previous.TabIndex = 1
         Me.btn_previous.Text = "Previous"
         Me.btn_previous.UseVisualStyleBackColor = True
         '
+        'TableTableAdapter
+        '
+        Me.TableTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.TableTableAdapter = Me.TableTableAdapter
+        Me.TableAdapterManager.UpdateOrder = LMS_gui.studentsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'txt_id
+        '
+        Me.txt_id.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Id", True))
+        Me.txt_id.Location = New System.Drawing.Point(98, 30)
+        Me.txt_id.Name = "txt_id"
+        Me.txt_id.Size = New System.Drawing.Size(100, 20)
+        Me.txt_id.TabIndex = 16
+        '
+        'txt_fname
+        '
+        Me.txt_fname.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "First Name", True))
+        Me.txt_fname.Location = New System.Drawing.Point(98, 56)
+        Me.txt_fname.Name = "txt_fname"
+        Me.txt_fname.Size = New System.Drawing.Size(100, 20)
+        Me.txt_fname.TabIndex = 18
+        '
+        'txt_lname
+        '
+        Me.txt_lname.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Last Name", True))
+        Me.txt_lname.Location = New System.Drawing.Point(98, 82)
+        Me.txt_lname.Name = "txt_lname"
+        Me.txt_lname.Size = New System.Drawing.Size(100, 20)
+        Me.txt_lname.TabIndex = 20
+        '
+        'txt_user
+        '
+        Me.txt_user.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Username", True))
+        Me.txt_user.Location = New System.Drawing.Point(98, 108)
+        Me.txt_user.Name = "txt_user"
+        Me.txt_user.Size = New System.Drawing.Size(100, 20)
+        Me.txt_user.TabIndex = 22
+        '
+        'txt_pass
+        '
+        Me.txt_pass.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Password", True))
+        Me.txt_pass.Location = New System.Drawing.Point(98, 134)
+        Me.txt_pass.Name = "txt_pass"
+        Me.txt_pass.Size = New System.Drawing.Size(100, 20)
+        Me.txt_pass.TabIndex = 24
+        '
+        'txt_phone
+        '
+        Me.txt_phone.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Phone Number", True))
+        Me.txt_phone.Location = New System.Drawing.Point(98, 160)
+        Me.txt_phone.Name = "txt_phone"
+        Me.txt_phone.Size = New System.Drawing.Size(100, 20)
+        Me.txt_phone.TabIndex = 26
+        '
+        'txt_studentid
+        '
+        Me.txt_studentid.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Student Id", True))
+        Me.txt_studentid.Location = New System.Drawing.Point(322, 30)
+        Me.txt_studentid.Name = "txt_studentid"
+        Me.txt_studentid.Size = New System.Drawing.Size(100, 20)
+        Me.txt_studentid.TabIndex = 28
+        '
+        'txt_class
+        '
+        Me.txt_class.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Class ", True))
+        Me.txt_class.Location = New System.Drawing.Point(322, 56)
+        Me.txt_class.Name = "txt_class"
+        Me.txt_class.Size = New System.Drawing.Size(100, 20)
+        Me.txt_class.TabIndex = 30
+        '
+        'txt_t1
+        '
+        Me.txt_t1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Test 1", True))
+        Me.txt_t1.Location = New System.Drawing.Point(322, 82)
+        Me.txt_t1.Name = "txt_t1"
+        Me.txt_t1.Size = New System.Drawing.Size(100, 20)
+        Me.txt_t1.TabIndex = 32
+        '
+        'txt_t2
+        '
+        Me.txt_t2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Test 2", True))
+        Me.txt_t2.Location = New System.Drawing.Point(322, 108)
+        Me.txt_t2.Name = "txt_t2"
+        Me.txt_t2.Size = New System.Drawing.Size(100, 20)
+        Me.txt_t2.TabIndex = 34
+        '
+        'txt_t3
+        '
+        Me.txt_t3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TableBindingSource, "Test 3", True))
+        Me.txt_t3.Location = New System.Drawing.Point(322, 134)
+        Me.txt_t3.Name = "txt_t3"
+        Me.txt_t3.Size = New System.Drawing.Size(100, 20)
+        Me.txt_t3.TabIndex = 36
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.txt_id)
+        Me.GroupBox2.Controls.Add(Me.btn_save)
+        Me.GroupBox2.Controls.Add(Student_IdLabel)
+        Me.GroupBox2.Controls.Add(Me.btn_delete)
+        Me.GroupBox2.Controls.Add(IdLabel)
+        Me.GroupBox2.Controls.Add(Me.txt_studentid)
+        Me.GroupBox2.Controls.Add(Me.btn_next)
+        Me.GroupBox2.Controls.Add(Me.btn_insert)
+        Me.GroupBox2.Controls.Add(Class_Label)
+        Me.GroupBox2.Controls.Add(Me.txt_phone)
+        Me.GroupBox2.Controls.Add(Me.btn_previous)
+        Me.GroupBox2.Controls.Add(Me.txt_class)
+        Me.GroupBox2.Controls.Add(Phone_NumberLabel)
+        Me.GroupBox2.Controls.Add(Test_1Label)
+        Me.GroupBox2.Controls.Add(First_NameLabel)
+        Me.GroupBox2.Controls.Add(Me.txt_t1)
+        Me.GroupBox2.Controls.Add(Me.txt_pass)
+        Me.GroupBox2.Controls.Add(Test_2Label)
+        Me.GroupBox2.Controls.Add(Me.txt_fname)
+        Me.GroupBox2.Controls.Add(Me.txt_t2)
+        Me.GroupBox2.Controls.Add(PasswordLabel)
+        Me.GroupBox2.Controls.Add(Test_3Label)
+        Me.GroupBox2.Controls.Add(Last_NameLabel)
+        Me.GroupBox2.Controls.Add(Me.txt_t3)
+        Me.GroupBox2.Controls.Add(Me.txt_user)
+        Me.GroupBox2.Controls.Add(Me.txt_lname)
+        Me.GroupBox2.Controls.Add(UsernameLabel)
+        Me.GroupBox2.Location = New System.Drawing.Point(330, 277)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(553, 272)
+        Me.GroupBox2.TabIndex = 37
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "GroupBox2"
+        '
         'Student_Management
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1018, 510)
+        Me.ClientSize = New System.Drawing.Size(1173, 630)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(IdLabel)
-        Me.Controls.Add(Me.txt_id)
-        Me.Controls.Add(First_NameLabel)
-        Me.Controls.Add(Phone_NumberLabel)
-        Me.Controls.Add(Me.txt_first_name)
-        Me.Controls.Add(Me.txt_pass)
-        Me.Controls.Add(Last_NameLabel)
-        Me.Controls.Add(PasswordLabel)
-        Me.Controls.Add(Me.txt_last_name)
-        Me.Controls.Add(Me.txt_user)
-        Me.Controls.Add(UsernameLabel)
-        Me.Controls.Add(Me.GroupBox2)
         Me.Name = "Student_Management"
         Me.Text = "Student_Management"
-        CType(Me.StudentsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.TableBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableBindingNavigator.ResumeLayout(False)
         Me.TableBindingNavigator.PerformLayout()
+        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.StudentsDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents btn_back As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btn_save As Button
+    Friend WithEvents btn_delete As Button
+    Friend WithEvents btn_next As Button
+    Friend WithEvents btn_insert As Button
+    Friend WithEvents btn_previous As Button
     Friend WithEvents StudentsDataSet As studentsDataSet
     Friend WithEvents TableBindingSource As BindingSource
     Friend WithEvents TableTableAdapter As studentsDataSetTableAdapters.TableTableAdapter
@@ -504,17 +655,21 @@ Partial Class Student_Management
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
     Friend WithEvents txt_id As TextBox
-    Friend WithEvents txt_first_name As TextBox
-    Friend WithEvents txt_last_name As TextBox
+    Friend WithEvents txt_fname As TextBox
+    Friend WithEvents txt_lname As TextBox
     Friend WithEvents txt_user As TextBox
     Friend WithEvents txt_pass As TextBox
-    Friend WithEvents txt_phone_number As TextBox
+    Friend WithEvents txt_phone As TextBox
+    Friend WithEvents txt_studentid As TextBox
+    Friend WithEvents txt_class As TextBox
+    Friend WithEvents txt_t1 As TextBox
+    Friend WithEvents txt_t2 As TextBox
+    Friend WithEvents txt_t3 As TextBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents btn_save As Button
-    Friend WithEvents btn_delete As Button
-    Friend WithEvents btn_next As Button
-    Friend WithEvents btn_insert As Button
-    Friend WithEvents btn_previous As Button
 End Class
