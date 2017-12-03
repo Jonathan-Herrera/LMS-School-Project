@@ -1,0 +1,10 @@
+Delete .xsd file found in souluion explorer
+Open Data Source Tab and add new connection
+When prompted with, Where will the application get data from?, select Database
+When prompted with, What type of database model do you want o use?, select Dataset
+On the next from select new connection and make sure data source is in Microsoft SQL Database file
+On the same form search for students.mdf file and attach
+Make sure connection is successful by clicking Test Connection and clik Ok
+A form will pop up.....just click no ( if you click yes the database will reset each time the program runs)
+Select tables and click finish
+Program should now run properly with the database
